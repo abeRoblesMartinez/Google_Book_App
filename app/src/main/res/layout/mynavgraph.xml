@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/bookSearchFragment"
-        android:name="viewmodels.BookSearchFragment"
+        android:name="com.learntodroid.mvvmrestapi.views.BookSearchFragment"
         android:label="fragment_booksearch"
         tools:layout="@layout/fragment_booksearch" />
 </navigation>

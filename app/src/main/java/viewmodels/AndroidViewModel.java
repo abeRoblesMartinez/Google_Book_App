@@ -1,3 +1,4 @@
+package viewmodels;
 
 import android.app.Application;
 
@@ -7,8 +8,6 @@ import androidx.lifecycle.LiveData;
 
 import models.VolumesResponse;
 import repositories.BookRepository;
-
-import io.github.cdimascio.dotenv.Dotenv;
 
 public class BookSearchViewModel extends AndroidViewModel {
     private BookRepository bookRepository;

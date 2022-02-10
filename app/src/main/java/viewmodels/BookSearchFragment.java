@@ -1,4 +1,4 @@
-package com.learntodroid.mvvmrestapi.views;
+package viewmodels;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,9 +14,12 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.googlebook.R;
 import com.google.android.material.textfield.TextInputEditText;
 
+import models.VolumesResponse;
 import viewmodels.BookSearchResultsAdapter;
+import viewmodels.BookSearchViewModel;
 
 public class BookSearchFragment extends Fragment {
     private BookSearchViewModel viewModel;
@@ -37,7 +40,7 @@ public class BookSearchFragment extends Fragment {
             @Override
             public void onChanged(VolumesResponse volumesResponse) {
                 if (volumesResponse != null) {
-                    adapter.setResults(volumesResponse.getItems());
+                    adapter.setResults(VolumesResponse.getItems());
                 }
             }
         });
