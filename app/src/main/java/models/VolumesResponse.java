@@ -12,6 +12,7 @@ public class VolumesResponse {
 
     @SerializedName("items")
     @Expose
+    static
     List<Volume> items = null;
 
     @SerializedName("totalItems")
@@ -22,7 +23,7 @@ public class VolumesResponse {
         return kind;
     }
 
-    public List<Volume> getItems() {
+    public static List<Volume> getItems() {
         return items;
     }
 
